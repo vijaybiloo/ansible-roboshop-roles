@@ -1,0 +1,12 @@
+- name: copy mongo repo to yum.repos.d
+  ansible.builtin.copy:
+    src: mongodb.repo
+    dest: /etc/yum.repos.d/mongo.repo
+
+- name: install mongodb
+  ansible.builtin.yum:
+    name: mongodb-org-shell
+    state: present
+
+- name: load {{component}} data
+  ansible.builtin.command: mongo --host mongodb.vijaydeepak0812.online. < /app/schema/{{component}}.js
