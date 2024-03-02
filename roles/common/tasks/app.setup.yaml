@@ -5,7 +5,6 @@
   
 - when: out.rc != 0
   name: create user roboshop
-  become: yes
   ansible.builtin.user:
     name: roboshop
 
