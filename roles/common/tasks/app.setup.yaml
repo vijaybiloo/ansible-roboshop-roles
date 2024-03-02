@@ -5,6 +5,7 @@
   
 - when: out.rc != 0
   name: create user roboshop 
+  become: yes 
   ansible.builtin.user:
     name: roboshop
 
@@ -30,6 +31,6 @@
 
 - name: extract {{component}} artifact
   ansible.builtin.unarchive:
-    src: /opt/catalogue.zip
+    src: /opt/{{component}}.zip
     dest: /app
     remote_src: yes
