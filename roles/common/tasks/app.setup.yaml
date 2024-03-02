@@ -23,7 +23,7 @@
     path: /app
     state: directory
 
-- name: download catalogue artifact
+- name: download {{component}} artifact
   ansible.builtin.get_url:
     url: https://roboshop-builds.s3.amazonaws.com/{{component}}.zip
     dest: /opt
