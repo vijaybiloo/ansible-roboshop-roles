@@ -4,8 +4,8 @@ mongodb.vijaydeepak0812.online
 [catalogue]
 catalogue.vijaydeepak0812.online
 
-[web]
-web.vijaydeepak0812.online
+[web-nginx]
+web-nginx.vijaydeepak0812.online
 
 [redis]
 redis.vijaydeepak0812.online
@@ -27,3 +27,6 @@ rabbitmq.vijaydeepak0812.online
 
 [payment]
 payment.vijaydeepak0812.online
+
+[dispatch]
+dispatch.vijaydeepak0812.online
