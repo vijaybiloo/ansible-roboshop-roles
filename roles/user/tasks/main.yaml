@@ -21,7 +21,7 @@
 - name: Load Schema
   ansible.builtin.import_role:
     name: common
-    tasks_from: load-mongo-schema
+    tasks_from: load-mongodb-schema
 
 - name: SetUp Application
   ansible.builtin.import_role:
